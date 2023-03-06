@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:localize_and_translate/localize_and_translate.dart';
 
 import '../../core/widgets/time_lines_widgets.dart';
 
@@ -17,7 +18,7 @@ class PersonalSummaryWidgetMobile extends StatelessWidget {
           physics: const NeverScrollableScrollPhysics(),
           children: [
             Text(
-              'BIOGRAPHY',
+              'bibliography_title'.tr(),
               style: GoogleFonts.notoSerif(
                 textStyle: const TextStyle(
                   color: Colors.black45,
@@ -29,7 +30,7 @@ class PersonalSummaryWidgetMobile extends StatelessWidget {
               height: 5,
             ),
             Text(
-              '''I am enthusiastic, self-taught, I like constant personal improvement, with the aim of offering better solutions to problems both in work environments and in daily life. I maintain good interpersonal relationships with my co-workers. ''',
+              'bibliography'.tr(),
               style: GoogleFonts.notoSerif(
                 textStyle: const TextStyle(
                   color: Colors.black87,
@@ -77,18 +78,6 @@ class PersonalSummaryWidgetMobile extends StatelessWidget {
                           ),
                         )),
                     const SizedBox(
-                      height: 5,
-                    ),
-                    Text(
-                      'Web Application Developer',
-                      style: GoogleFonts.notoSerif(
-                        textStyle: const TextStyle(
-                          color: Colors.black87,
-                          fontSize: 12,
-                        ),
-                      ),
-                    ),
-                    const SizedBox(
                       height: 35,
                     ),
                     Text('CONTACT',
@@ -102,7 +91,7 @@ class PersonalSummaryWidgetMobile extends StatelessWidget {
                       height: 5,
                     ),
                     Text(
-                      'alcampospalacios@gmail.com',
+                      'email'.tr(),
                       style: GoogleFonts.notoSerif(
                         textStyle: const TextStyle(
                           color: Colors.black87,

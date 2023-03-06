@@ -132,7 +132,7 @@ class SkillsWidget extends StatelessWidget {
                     child: Column(
                       children: [
                         Image.asset(
-                          'assets/logos/angular.png',
+                          'assets/logos/android.png',
                           width: MediaQuery.of(context).size.width * 0.1,
                           height: MediaQuery.of(context).size.width * 0.1,
                         ),
@@ -149,7 +149,7 @@ class SkillsWidget extends StatelessWidget {
                     ),
                   ),
                   Text(
-                    'Angular',
+                    'Android',
                     style: GoogleFonts.notoSerif(
                       textStyle: const TextStyle(
                         color: Colors.black,
@@ -176,7 +176,7 @@ class SkillsWidget extends StatelessWidget {
                     child: Column(
                       children: [
                         Image.asset(
-                          'assets/logos/ts.png',
+                          'assets/logos/kotlin.png',
                           width: MediaQuery.of(context).size.width * 0.1,
                           height: MediaQuery.of(context).size.width * 0.1,
                         ),
@@ -193,7 +193,7 @@ class SkillsWidget extends StatelessWidget {
                     ),
                   ),
                   Text(
-                    'Typescript',
+                    'Kotlin',
                     style: GoogleFonts.notoSerif(
                       textStyle: const TextStyle(
                         color: Colors.black,
@@ -220,7 +220,7 @@ class SkillsWidget extends StatelessWidget {
                     child: Column(
                       children: [
                         Image.asset(
-                          'assets/logos/js.png',
+                          'assets/logos/bloc.png',
                           width: MediaQuery.of(context).size.width * 0.1,
                           height: MediaQuery.of(context).size.width * 0.1,
                         ),
@@ -237,139 +237,7 @@ class SkillsWidget extends StatelessWidget {
                     ),
                   ),
                   Text(
-                    'Javascript',
-                    style: GoogleFonts.notoSerif(
-                      textStyle: const TextStyle(
-                        color: Colors.black,
-                        fontSize: 18,
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-              const SizedBox(width: 25),
-              Column(
-                children: [
-                  Container(
-                    width: MediaQuery.of(context).size.width * 0.1,
-                    height: MediaQuery.of(context).size.width * 0.15,
-                    padding: const EdgeInsets.all(15),
-                    decoration: BoxDecoration(
-                      color: Colors.black12,
-                      border: Border.all(
-                          color: const Color(0xfff3f3f3), width: 0.5),
-                      borderRadius:
-                          const BorderRadius.all(Radius.circular(130)),
-                    ),
-                    child: Column(
-                      children: [
-                        Image.asset(
-                          'assets/logos/html.png',
-                          width: MediaQuery.of(context).size.width * 0.1,
-                          height: MediaQuery.of(context).size.width * 0.1,
-                        ),
-                        Text(
-                          '90%',
-                          style: GoogleFonts.notoSerif(
-                            textStyle: const TextStyle(
-                              color: Colors.black87,
-                              fontSize: 18,
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  Text(
-                    'Html',
-                    style: GoogleFonts.notoSerif(
-                      textStyle: const TextStyle(
-                        color: Colors.black,
-                        fontSize: 18,
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-              const SizedBox(width: 25),
-              Column(
-                children: [
-                  Container(
-                    width: MediaQuery.of(context).size.width * 0.1,
-                    height: MediaQuery.of(context).size.width * 0.15,
-                    padding: const EdgeInsets.all(15),
-                    decoration: BoxDecoration(
-                      color: Colors.black12,
-                      border: Border.all(
-                          color: const Color(0xfff3f3f3), width: 0.5),
-                      borderRadius:
-                          const BorderRadius.all(Radius.circular(130)),
-                    ),
-                    child: Column(
-                      children: [
-                        Image.asset(
-                          'assets/logos/css.png',
-                          width: MediaQuery.of(context).size.width * 0.1,
-                          height: MediaQuery.of(context).size.width * 0.1,
-                        ),
-                        Text(
-                          '80%',
-                          style: GoogleFonts.notoSerif(
-                            textStyle: const TextStyle(
-                              color: Colors.black87,
-                              fontSize: 18,
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  Text(
-                    'Css',
-                    style: GoogleFonts.notoSerif(
-                      textStyle: const TextStyle(
-                        color: Colors.black,
-                        fontSize: 18,
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-              const SizedBox(width: 25),
-              Column(
-                children: [
-                  Container(
-                    width: MediaQuery.of(context).size.width * 0.1,
-                    height: MediaQuery.of(context).size.width * 0.15,
-                    padding: const EdgeInsets.all(15),
-                    decoration: BoxDecoration(
-                      color: Colors.black12,
-                      border: Border.all(
-                          color: const Color(0xfff3f3f3), width: 0.5),
-                      borderRadius:
-                          const BorderRadius.all(Radius.circular(130)),
-                    ),
-                    child: Column(
-                      children: [
-                        Image.asset(
-                          'assets/logos/sass.png',
-                          width: MediaQuery.of(context).size.width * 0.1,
-                          height: MediaQuery.of(context).size.width * 0.1,
-                        ),
-                        Text(
-                          '78%',
-                          style: GoogleFonts.notoSerif(
-                            textStyle: const TextStyle(
-                              color: Colors.black87,
-                              fontSize: 18,
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  Text(
-                    'Sass',
+                    'Flutter Bloc',
                     style: GoogleFonts.notoSerif(
                       textStyle: const TextStyle(
                         color: Colors.black,

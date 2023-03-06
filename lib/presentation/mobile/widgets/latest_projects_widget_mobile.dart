@@ -18,14 +18,10 @@ class _LatestProjectWidgetMobileState extends State<LatestProjectWidgetMobile> {
 
   final pages = [
     const CardProjectWidgetMobile(
-      imageUrl: 'assets/images/pp2.jpeg',
-      title: 'Picker&PackerTwo',
-      url: 'Developing',
-    ),
-    const CardProjectWidgetMobile(
-      imageUrl: 'assets/images/get_image_cache_network.gif',
-      title: 'GetImageCacheNetwork',
-      url: 'https://pub.dev/packages/get_image_cache_network',
+      imageUrl: 'assets/images/allinbikin.jpeg',
+      title: 'AllInBiking',
+      url:
+          'https://play.google.com/store/apps/details?id=com.allinbiking.mobile.prod&hl=es',
     ),
     const CardProjectWidgetMobile(
       imageUrl: 'assets/images/tkc.jpeg',

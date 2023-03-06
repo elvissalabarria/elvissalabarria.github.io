@@ -1,4 +1,5 @@
 import 'package:google_fonts/google_fonts.dart';
+import 'package:localize_and_translate/localize_and_translate.dart';
 
 import '../../core/widgets/time_lines_widgets.dart';
 import 'package:flutter/material.dart';
@@ -21,7 +22,7 @@ class PersonalSummaryWidget extends StatelessWidget {
               physics: const NeverScrollableScrollPhysics(),
               children: [
                 Text(
-                  'BIOGRAPHY',
+                  'bibliography_title'.tr(),
                   style: GoogleFonts.notoSerif(
                     textStyle: const TextStyle(
                       color: Colors.black45,
@@ -33,7 +34,7 @@ class PersonalSummaryWidget extends StatelessWidget {
                   height: 5,
                 ),
                 Text(
-                  '''I am enthusiastic, self-taught, I like constant personal improvement, with the aim of offering better solutions to problems both in work environments and in daily life. I maintain good interpersonal relationships with my co-workers. ''',
+                  'bibliography'.tr(),
                   style: GoogleFonts.notoSerif(
                     textStyle: const TextStyle(
                       color: Colors.black87,
@@ -59,7 +60,7 @@ class PersonalSummaryWidget extends StatelessWidget {
                   height: 5,
                 ),
                 Text(
-                  'alcampospalacios@gmail.com',
+                  'email'.tr(),
                   style: GoogleFonts.notoSerif(
                     textStyle: const TextStyle(
                       color: Colors.black87,
@@ -103,18 +104,6 @@ class PersonalSummaryWidget extends StatelessWidget {
                     ),
                   ),
                 ),
-                const SizedBox(
-                  height: 5,
-                ),
-                Text(
-                  'Web Application Developer',
-                  style: GoogleFonts.notoSerif(
-                    textStyle: const TextStyle(
-                      color: Colors.black87,
-                      fontSize: 14,
-                    ),
-                  ),
-                ),
               ],
             ),
           ),
@@ -127,11 +116,11 @@ class PersonalSummaryWidget extends StatelessWidget {
             ),
             child: ClipRRect(
               borderRadius: const BorderRadius.all(Radius.circular(120)),
-              child: Image.asset(
-                'assets/images/alcampos.jpg',
+              child: Image.network(
+                'https://avatars.githubusercontent.com/u/46904863?v=4',
+                fit: BoxFit.cover,
                 height: MediaQuery.of(context).size.height * 0.44,
                 width: MediaQuery.of(context).size.width * 0.15,
-                fit: BoxFit.cover,
               ),
             ),
           ),

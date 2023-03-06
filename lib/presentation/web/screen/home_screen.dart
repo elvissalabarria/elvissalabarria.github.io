@@ -77,16 +77,16 @@ class _HomeScreenState extends State<HomeScreen> {
           ],
         ),
         title: Image.asset(
-          'assets/logos/alcampos.png',
+          'assets/logos/logo.png',
           width: MediaQuery.of(context).size.width * 0.3,
-          height: MediaQuery.of(context).size.height * 0.27,
+          height: MediaQuery.of(context).size.height * 0.25,
         ),
         centerTitle: true,
         actions: [
           Center(
               child: IconButton(
                   onPressed: () => html.window
-                      .open('https://github.com/alcampospalacios', "_blank"),
+                      .open('https://github.com/elvissalabarria', "_blank"),
                   icon: const FaIcon(
                     FontAwesomeIcons.github,
                     size: 16,
@@ -94,17 +94,9 @@ class _HomeScreenState extends State<HomeScreen> {
                   ))),
           Center(
               child: IconButton(
-                  onPressed: () => html.window
-                      .open('https://twitter.com/4l3j4ndr09212', "_blank"),
-                  icon: const FaIcon(
-                    FontAwesomeIcons.twitter,
-                    size: 16,
-                    color: Colors.black,
-                  ))),
-          Center(
-              child: IconButton(
                   onPressed: () => html.window.open(
-                      'https://www.linkedin.com/in/alcampospalacios', "_blank"),
+                      'https://www.linkedin.com/in/elvis-salabarria-aquino-279001112/',
+                      "_blank"),
                   icon: const FaIcon(
                     FontAwesomeIcons.linkedinIn,
                     size: 16,
@@ -113,7 +105,7 @@ class _HomeScreenState extends State<HomeScreen> {
           Center(
               child: IconButton(
                   onPressed: () => html.window.open(
-                      'https://stackoverflow.com/users/12355947/alejandro-campos-palacios',
+                      'https://stackoverflow.com/users/12276511/elvis-salabarria-aquino',
                       "_blank"),
                   icon: const FaIcon(
                     FontAwesomeIcons.stackOverflow,
@@ -126,7 +118,7 @@ class _HomeScreenState extends State<HomeScreen> {
             child: Center(
                 child: IconButton(
                     onPressed: () => html.window.open(
-                        'https://drive.google.com/file/d/14Y8wr4dwm1lRv8zVRQ8Kixi9_WuxuM8V/view?usp=sharing',
+                        'https://docs.google.com/document/d/1ALR7dO7-VHlY5wHJpjiRXXCfda8SPNEdDibp7gCawP0/edit?usp=sharing',
                         "_blank"),
                     icon: const FaIcon(
                       FontAwesomeIcons.fileArrowDown,

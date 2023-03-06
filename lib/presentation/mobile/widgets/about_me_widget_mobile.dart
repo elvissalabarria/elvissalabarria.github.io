@@ -13,11 +13,6 @@ class AboutMeWidgetMobile extends StatelessWidget {
               textStyle:
                   const TextStyle(fontSize: 18, fontWeight: FontWeight.w500),
             )),
-        Text('Based on Cuba',
-            style: GoogleFonts.notoSerif(
-              textStyle:
-                  const TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
-            )),
       ],
     );
   }

@@ -29,7 +29,7 @@ class EducationAndExperience extends StatelessWidget {
                   shrinkWrap: true,
                   scrollDirection: Axis.vertical,
                   children: [
-                    Text('2011-2017',
+                    Text('2012-2017',
                         style: GoogleFonts.notoSerif(
                           textStyle: const TextStyle(
                             color: Colors.black45,
@@ -108,7 +108,7 @@ class EducationAndExperience extends StatelessWidget {
                       height: 5,
                     ),
                     Text(
-                      'Teaching postgraduate courses about PROXY',
+                      'Teaching postgraduate courses about Mobile Tech',
                       style: GoogleFonts.notoSerif(
                         textStyle: const TextStyle(
                           color: Colors.black87,
@@ -162,7 +162,7 @@ class EducationAndExperience extends StatelessWidget {
                       height: 5,
                     ),
                     Text(
-                      'Fronted developer of AKADEMOS',
+                      'Fronted developer of Intellisys D. Corp',
                       style: GoogleFonts.notoSerif(
                         textStyle: const TextStyle(
                           color: Colors.black87,

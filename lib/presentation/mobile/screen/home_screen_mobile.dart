@@ -1,5 +1,3 @@
-import 'dart:html' as html;
-
 import 'package:google_fonts/google_fonts.dart';
 
 import '../../core/widgets/menu_widget.dart';
@@ -33,9 +31,9 @@ class _HomeScreenMobileState extends State<HomeScreenMobile> {
           elevation: 0,
           leadingWidth: MediaQuery.of(context).size.width * 0.4,
           title: Image.asset(
-            'assets/logos/alcampos.png',
+            'assets/logos/my_logo.png',
             width: MediaQuery.of(context).size.width * 0.3,
-            height: MediaQuery.of(context).size.height * 0.27,
+            height: MediaQuery.of(context).size.height * 0.5,
           ),
           centerTitle: true,
           actions: [
@@ -47,8 +45,8 @@ class _HomeScreenMobileState extends State<HomeScreenMobile> {
                   backgroundColor: Colors.transparent,
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(25),
-                    child: Image.asset(
-                      'assets/images/alcampos.jpg',
+                    child: Image.network(
+                      'https://avatars.githubusercontent.com/u/46904863?v=4',
                       fit: BoxFit.cover,
                     ),
                   ),
