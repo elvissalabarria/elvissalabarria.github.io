@@ -30,7 +30,7 @@ runs-on: ubuntu-latest
       - uses: bluefireteam/flutter-gh-pages@v7
         with:
           webRenderer: html
-          baseHref: /My portfolio/
+          baseHref: /elvissalabarria_portfolio/
 
 ```
 
