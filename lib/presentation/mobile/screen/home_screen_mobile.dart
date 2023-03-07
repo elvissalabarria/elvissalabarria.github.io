@@ -88,7 +88,7 @@ class _HomeScreenMobileState extends State<HomeScreenMobile> {
               const Divider(color: Colors.black26, thickness: 0.5),
               const SizedBox(height: 45),
               Text(
-                  'Made with flutter by @alcampospalacios, design by Alejandro Campos',
+                  'Made with flutter by @elvissalabarria, design by Alejandro Campos',
                   style: GoogleFonts.notoSerif(
                     textStyle: const TextStyle(color: Colors.black45),
                   )),

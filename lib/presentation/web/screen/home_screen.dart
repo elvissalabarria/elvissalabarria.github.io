@@ -160,7 +160,7 @@ class _HomeScreenState extends State<HomeScreen> {
             const SizedBox(height: 45),
             Row(
               children: [
-                Text('Made with flutter by @alcampospalacios, design by',
+                Text('Made with flutter by @elvissalabarria, design by',
                     style: GoogleFonts.notoSerif(
                       textStyle: const TextStyle(
                         color: Colors.black45,
@@ -171,6 +171,23 @@ class _HomeScreenState extends State<HomeScreen> {
                       'https://dribbble.com/shots/16077352-Personal-Portfolio-Site-Bruno-Erdison',
                       "_blank"),
                   child: Text('Logan Cee',
+                      style: GoogleFonts.notoSerif(
+                        textStyle: TextStyle(
+                          color: Colors.red[300],
+                        ),
+                      )),
+                ),
+                Text('and',
+                    style: GoogleFonts.notoSerif(
+                      textStyle: const TextStyle(
+                        color: Colors.black45,
+                      ),
+                    )),
+                TextButton(
+                  onPressed: () => html.window.open(
+                      'https://alcampospalacios.github.io/alcampos_portfolio/#/home',
+                      "_blank"),
+                  child: Text('Alejandro Campos',
                       style: GoogleFonts.notoSerif(
                         textStyle: TextStyle(
                           color: Colors.red[300],
