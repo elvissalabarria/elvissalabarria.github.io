@@ -22,7 +22,7 @@ class PersonalSummaryWidget extends StatelessWidget {
               physics: const NeverScrollableScrollPhysics(),
               children: [
                 Text(
-                  'bibliography_title'.tr(),
+                  'Bibliography',
                   style: GoogleFonts.notoSerif(
                     textStyle: const TextStyle(
                       color: Colors.black45,
@@ -34,7 +34,7 @@ class PersonalSummaryWidget extends StatelessWidget {
                   height: 5,
                 ),
                 Text(
-                  'bibliography'.tr(),
+                  'I am a passionate software developer who enjoys spending countless hours programming. 💡 I have an entrepreneurial spirit and I love learning new technologies',
                   style: GoogleFonts.notoSerif(
                     textStyle: const TextStyle(
                       color: Colors.black87,
@@ -60,7 +60,7 @@ class PersonalSummaryWidget extends StatelessWidget {
                   height: 5,
                 ),
                 Text(
-                  'email'.tr(),
+                  'elvis.salabarria.3@gmail.com',
                   style: GoogleFonts.notoSerif(
                     textStyle: const TextStyle(
                       color: Colors.black87,
