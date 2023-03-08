@@ -63,7 +63,7 @@ class EducationAndExperienceWidgetMobile extends StatelessWidget {
           height: 5,
         ),
         Text(
-          'Developer of NOVA desktop',
+          'Developer of DroiLab',
           style: GoogleFonts.notoSerif(
             textStyle: const TextStyle(
               color: Colors.black87,
