@@ -142,15 +142,6 @@ class EducationAndExperienceWidgetMobile extends StatelessWidget {
             ),
           ),
         ),
-        Text(
-          'Center of Technologies for Training (FORTES)',
-          style: GoogleFonts.notoSerif(
-            textStyle: const TextStyle(
-              color: Colors.black45,
-              fontSize: 12,
-            ),
-          ),
-        ),
         const SizedBox(
           height: 5,
         ),
