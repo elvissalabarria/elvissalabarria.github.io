@@ -21,29 +21,25 @@ class CardProjectWidgetMobile extends StatelessWidget {
         InkWell(
           onTap: () => html.window.open(url, "_blank"),
           child: Container(
-            width: MediaQuery.of(context).size.width * 0.4,
-            height: MediaQuery.of(context).size.height * 0.25,
+            width: MediaQuery.of(context).size.width * 0.1,
+            height: MediaQuery.of(context).size.height * 0.4,
             decoration: BoxDecoration(
-              color: Colors.white,
-              borderRadius: BorderRadius.circular(10),
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.black.withOpacity(0.1),
-                  blurRadius: 10,
-                  spreadRadius: 3,
-                  offset: const Offset(0, 5),
-                ),
-              ],
-            ),
-            child: Padding(
-              padding: const EdgeInsets.symmetric(vertical: 8.0),
-              child: Image.asset(
-                imageUrl,
-                fit: BoxFit.contain,
-                width: MediaQuery.of(context).size.width * 0.2,
-                height: MediaQuery.of(context).size.height * 0.4,
-              ),
-            ),
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(10),
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.black.withOpacity(0.1),
+                    blurRadius: 10,
+                    spreadRadius: 3,
+                    offset: const Offset(0, 5),
+                  ),
+                ],
+                image: DecorationImage(
+                  fit: BoxFit.contain,
+                  image: AssetImage(
+                    imageUrl,
+                  ),
+                )),
           ),
         ),
         const SizedBox(height: 10),
