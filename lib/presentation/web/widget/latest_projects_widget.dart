@@ -1,3 +1,4 @@
+import 'package:elvissalabarria_portfolio/presentation/core/data/pages.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
@@ -14,25 +15,6 @@ class LatestProjectWidget extends StatefulWidget {
 class _LatestProjectWidgetState extends State<LatestProjectWidget> {
   final controller =
       PageController(viewportFraction: 0.3, keepPage: true, initialPage: 1);
-
-  final pages = [
-    const CardProjectWidget(
-      imageUrl: 'assets/images/allinbikin.jpeg',
-      title: 'AllInBiking',
-      url:
-          'https://play.google.com/store/apps/details?id=com.allinbiking.mobile.prod&hl=es',
-    ),
-    const CardProjectWidget(
-      imageUrl: 'assets/images/tkc.jpeg',
-      title: 'TKC App',
-      url: 'https://play.google.com/store/apps/details?id=com.tkc.app.pro',
-    ),
-    const CardProjectWidget(
-      imageUrl: 'assets/images/pp1.jpeg',
-      title: 'Picker&Packer',
-      url: 'https://play.google.com/store/apps/details?id=com.pickpack.app.pro',
-    ),
-  ];
 
   @override
   Widget build(BuildContext context) {
@@ -52,11 +34,16 @@ class _LatestProjectWidgetState extends State<LatestProjectWidget> {
         const SizedBox(height: 20),
         SizedBox(
           height: MediaQuery.of(context).size.height * 0.6,
-          child: PageView.builder(
-            controller: controller,
+          width: MediaQuery.of(context).size.width * 0.4,
+          child: ListView.builder(
             itemCount: pages.length,
+            shrinkWrap: true,
+            scrollDirection: Axis.horizontal,
             itemBuilder: (_, index) {
-              return pages[index % pages.length];
+              return Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: pages[index % pages.length],
+              );
             },
           ),
         ),
