@@ -1,3 +1,4 @@
+import 'package:elvissalabarria_portfolio/presentation/core/data/experiences.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -8,125 +9,41 @@ class TimeLinesWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.only(top: 8.0),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Row(
-            children: [
-              Container(
-                width: 18,
-                height: 18,
-                decoration: const BoxDecoration(
-                  color: Colors.black12,
-                  shape: BoxShape.circle,
+      child: SizedBox(
+        width: double.infinity,
+        height: MediaQuery.of(context).size.height*0.2,
+        child: ListView.builder(
+          itemCount: experiences.length,
+          shrinkWrap: true,
+          itemBuilder: (_,index){
+          return Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Row(
+              children: [
+                Container(
+                  width: MediaQuery.of(context).size.width * 0.01,
+                  height: MediaQuery.of(context).size.height * 0.01,
+                  decoration: const BoxDecoration(
+                    color: Colors.black12,
+                    shape: BoxShape.circle,
+                  ),
                 ),
-              ),
-              const SizedBox(width: 5),
-              Text(
-                'Intellisys D. Corp: 1 Years',
-                style: GoogleFonts.notoSerif(
-                  textStyle:
-                      const TextStyle(color: Colors.black87, fontSize: 14),
+                const SizedBox(width: 5),
+                Flexible(
+                  child: Text(
+                    experiences[index].titleExperience,
+                    style: GoogleFonts.notoSerif(
+                      textStyle: const TextStyle(
+                        color: Colors.black87,
+                        fontSize: 14,
+                      ),
+                    ),
+                  ),
                 ),
-              ),
-            ],
-          ),
-          const SizedBox(width: 5),
-          Padding(
-            padding: const EdgeInsets.only(left: 9.0),
-            child: Container(
-              width: 3,
-              height: 20,
-              decoration: const BoxDecoration(
-                  shape: BoxShape.rectangle,
-                  border: Border(
-                    left: BorderSide(color: Colors.black26, width: 0.7),
-                  )),
+              ],
             ),
-          ),
-          Row(
-            children: [
-              Container(
-                width: 18,
-                height: 18,
-                decoration: const BoxDecoration(
-                  color: Colors.black12,
-                  shape: BoxShape.circle,
-                ),
-              ),
-              const SizedBox(width: 5),
-              Text(
-                'CESOL-DroidLab: 1 Years',
-                style: GoogleFonts.notoSerif(
-                  textStyle:
-                      const TextStyle(color: Colors.black87, fontSize: 14),
-                ),
-              ),
-            ],
-          ),
-          Padding(
-            padding: const EdgeInsets.only(left: 9.0),
-            child: Container(
-              width: 3,
-              height: 20,
-              decoration: const BoxDecoration(
-                  shape: BoxShape.rectangle,
-                  border: Border(
-                    left: BorderSide(color: Colors.black26, width: 0.7),
-                  )),
-            ),
-          ),
-          Row(
-            children: [
-              Container(
-                width: 18,
-                height: 18,
-                decoration: const BoxDecoration(
-                  color: Colors.black12,
-                  shape: BoxShape.circle,
-                ),
-              ),
-              const SizedBox(width: 5),
-              Text(
-                'APKLIS: 1 Years',
-                style: GoogleFonts.notoSerif(
-                  textStyle:
-                      const TextStyle(color: Colors.black87, fontSize: 14),
-                ),
-              ),
-            ],
-          ),
-          Padding(
-            padding: const EdgeInsets.only(left: 9.0),
-            child: Container(
-              width: 3,
-              height: 20,
-              decoration: const BoxDecoration(
-                  shape: BoxShape.rectangle,
-                  border: Border(
-                    left: BorderSide(color: Colors.black26, width: 0.7),
-                  )),
-            ),
-          ),
-          Row(
-            children: [
-              Container(
-                width: 18,
-                height: 18,
-                decoration: const BoxDecoration(
-                  color: Colors.black12,
-                  shape: BoxShape.circle,
-                ),
-              ),
-              const SizedBox(width: 5),
-              Text('FREELANCER: 3 Year',
-                  style: GoogleFonts.notoSerif(
-                    textStyle:
-                        const TextStyle(color: Colors.black87, fontSize: 14),
-                  ))
-            ],
-          ),
-        ],
+          );
+        },),
       ),
     );
   }
