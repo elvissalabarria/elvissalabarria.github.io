@@ -59,6 +59,8 @@ class PersonalSummaryWidget extends StatelessWidget {
                   height: 5,
                 ),
                 Text(
+                  overflow: TextOverflow.ellipsis,
+                    maxLines: 1,
                   'elvis.salabarria.3@gmail.com',
                   style: GoogleFonts.notoSerif(
                     textStyle: const TextStyle(
@@ -83,6 +85,8 @@ class PersonalSummaryWidget extends StatelessWidget {
                   height: 5,
                 ),
                 Text(
+                  overflow: TextOverflow.ellipsis,
+                  maxLines: 1,
                   'Software Architect',
                   style: GoogleFonts.notoSerif(
                     textStyle: const TextStyle(
@@ -96,6 +100,8 @@ class PersonalSummaryWidget extends StatelessWidget {
                 ),
                 Text(
                   'Mobile Application Developer',
+                  overflow: TextOverflow.ellipsis,
+                  maxLines: 1,
                   style: GoogleFonts.notoSerif(
                     textStyle: const TextStyle(
                       color: Colors.black87,
@@ -106,21 +112,11 @@ class PersonalSummaryWidget extends StatelessWidget {
               ],
             ),
           ),
-          Container(
-            padding: const EdgeInsets.all(15),
-            decoration: BoxDecoration(
-              color: Colors.transparent,
-              border: Border.all(color: Colors.black12, width: 0.5),
-              borderRadius: const BorderRadius.all(Radius.circular(130)),
-            ),
-            child: ClipRRect(
-              borderRadius: const BorderRadius.all(Radius.circular(120)),
-              child: Image.network(
-                'https://avatars.githubusercontent.com/u/46904863?v=4',
-                fit: BoxFit.cover,
-                height: MediaQuery.of(context).size.height * 0.44,
-                width: MediaQuery.of(context).size.width * 0.15,
-              ),
+          const CircleAvatar(
+            maxRadius: 50,
+            minRadius: 10,
+            backgroundImage: NetworkImage(
+              'https://avatars.githubusercontent.com/u/46904863?v=4',
             ),
           ),
           SizedBox(

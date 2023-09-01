@@ -1,3 +1,4 @@
+import 'package:elvissalabarria_portfolio/presentation/web/widget/personal_summary_widget.dart';
 import 'package:elvissalabarria_portfolio/presentation/web/widget/skills_widget.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -7,7 +8,6 @@ import 'package:flutter/material.dart';
 import '../widgets/about_me_widget_mobile.dart';
 import '../widgets/education_and_experience_widget_mobile.dart';
 import '../widgets/latest_projects_widget_mobile.dart';
-import '../widgets/personal_summary_widget_mobile.dart';
 import '../widgets/tools_widget_mobile.dart';
 
 class HomeScreenMobile extends StatefulWidget {
@@ -59,36 +59,34 @@ class _HomeScreenMobileState extends State<HomeScreenMobile> {
           scrollController: _scrollController,
         ),
         body: Padding(
-          padding: EdgeInsets.only(
-            top: 18.0,
-            left: MediaQuery.of(context).size.width * 0.08,
-            right: MediaQuery.of(context).size.width * 0.08,
-          ),
-          child: ListView(
-            controller: _scrollController,
-            children: [
-              const Align(
-                alignment: Alignment.center,
-                child: AboutMeWidgetMobile(),
-              ),
-              const PersonalSummaryWidgetMobile(),
-              const ToolSWidgetMobile(),
-              const SizedBox(height: 45),
-              const Divider(color: Colors.black26, thickness: 0.5),
-              const SizedBox(height: 25),
-              const SkillsWidget(),
-              const Divider(color: Colors.black26, thickness: 0.5),
-              const SizedBox(height: 25),
-              const EducationAndExperienceWidgetMobile(),
-              const SizedBox(height: 25),
-              const Divider(color: Colors.black26, thickness: 0.5),
-              const SizedBox(height: 25),
-              const LatestProjectWidgetMobile(),
-              const SizedBox(height: 45),
-              const Divider(color: Colors.black26, thickness: 0.5),
-              const SizedBox(height: 45),
-              Flexible(
-                child: Text(
+          padding: const EdgeInsets.all(8.0),
+          child: SizedBox(
+            height: double.infinity,
+            width: double.infinity,
+            child: ListView(
+              controller: _scrollController,
+              children: [
+                const Align(
+                  alignment: Alignment.center,
+                  child: AboutMeWidgetMobile(),
+                ),
+                const PersonalSummaryWidget(),
+                const ToolSWidgetMobile(),
+                const SizedBox(height: 45),
+                const Divider(color: Colors.black26, thickness: 0.5),
+                const SizedBox(height: 25),
+                const SkillsWidget(),
+                const Divider(color: Colors.black26, thickness: 0.5),
+                const SizedBox(height: 25),
+                const EducationAndExperienceWidgetMobile(),
+                const SizedBox(height: 25),
+                const Divider(color: Colors.black26, thickness: 0.5),
+                const SizedBox(height: 25),
+                const LatestProjectWidgetMobile(),
+                const SizedBox(height: 45),
+                const Divider(color: Colors.black26, thickness: 0.5),
+                const SizedBox(height: 45),
+                Text(
                   overflow: TextOverflow.ellipsis,
                   maxLines: 2,
                   softWrap: true,
@@ -96,9 +94,9 @@ class _HomeScreenMobileState extends State<HomeScreenMobile> {
                     style: GoogleFonts.notoSerif(
                       textStyle: const TextStyle(color: Colors.black45),
                     )),
-              ),
-              const SizedBox(height: 25),
-            ],
+                const SizedBox(height: 25),
+              ],
+            ),
           ),
         ));
   }
