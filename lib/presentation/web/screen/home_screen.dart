@@ -1,5 +1,9 @@
+
+// ignore_for_file: avoid_web_libraries_in_flutter
+
 import 'dart:html' as html;
 
+import 'package:elvissalabarria_portfolio/presentation/mobile/widgets/latest_projects_widget_mobile.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -153,7 +157,7 @@ class _HomeScreenState extends State<HomeScreen> {
             const SizedBox(height: 45),
             const Divider(color: Colors.black26, thickness: 0.5),
             const SizedBox(height: 45),
-            const LatestProjectWidget(),
+            const LatestProjectWidgetMobile(),
             const SizedBox(height: 45),
             const SizedBox(height: 45),
             const Divider(color: Colors.black26, thickness: 0.5),
