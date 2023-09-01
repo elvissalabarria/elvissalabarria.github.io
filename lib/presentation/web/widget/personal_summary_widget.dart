@@ -1,5 +1,4 @@
 import 'package:google_fonts/google_fonts.dart';
-import 'package:localize_and_translate/localize_and_translate.dart';
 
 import '../../core/widgets/time_lines_widgets.dart';
 import 'package:flutter/material.dart';

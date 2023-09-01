@@ -60,7 +60,7 @@ extension EnumToString on Enum {
 }
 
 extension CapitalizeString on String {
-  String capitalizeString() => (this != null && length > 0)
+  String capitalizeString() => (length > 0)
       ? "${this[0].toUpperCase()}${substring(1)}"
       : '';
 }

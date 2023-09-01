@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_web_libraries_in_flutter
+
 import 'dart:html' as html;
 
 import 'package:flutter/material.dart';
@@ -19,34 +21,25 @@ class CardProjectWidgetMobile extends StatelessWidget {
     return Column(
       children: [
         InkWell(
-          onTap: () => html.window.open(url, "_blank"),
-          child: Container(
-            width: MediaQuery.of(context).size.width * 0.1,
-            height: MediaQuery.of(context).size.height * 0.4,
-            decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(10),
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.black.withOpacity(0.1),
-                    blurRadius: 10,
-                    spreadRadius: 3,
-                    offset: const Offset(0, 5),
+            onTap: () => html.window.open(url, "_blank"),
+            child: Container(
+                width: double.infinity,
+                height: MediaQuery.of(context).size.height * 0.7,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  image: DecorationImage(
+
+                    image: AssetImage(
+                      imageUrl,
+                    ),
+                    fit: BoxFit.contain,
                   ),
-                ],
-                image: DecorationImage(
-                  fit: BoxFit.contain,
-                  image: AssetImage(
-                    imageUrl,
-                  ),
-                )),
-          ),
-        ),
-        const SizedBox(height: 10),
+                ))),
         Text(title,
             style: GoogleFonts.notoSerif(
               textStyle: const TextStyle(
-                color: Colors.black45,
+                color: Colors.black,
+                fontWeight: FontWeight.bold
               ),
             )),
       ],

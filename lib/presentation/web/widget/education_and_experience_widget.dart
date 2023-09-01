@@ -194,6 +194,7 @@ class EducationAndExperience extends StatelessWidget {
                   ],
                 ),
               ),
+           
             ],
           ),
         ],

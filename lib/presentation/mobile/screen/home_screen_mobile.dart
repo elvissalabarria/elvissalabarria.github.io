@@ -1,3 +1,4 @@
+import 'package:elvissalabarria_portfolio/presentation/web/widget/skills_widget.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../../core/widgets/menu_widget.dart';
@@ -7,7 +8,6 @@ import '../widgets/about_me_widget_mobile.dart';
 import '../widgets/education_and_experience_widget_mobile.dart';
 import '../widgets/latest_projects_widget_mobile.dart';
 import '../widgets/personal_summary_widget_mobile.dart';
-import '../widgets/skills_widget_mobile.dart';
 import '../widgets/tools_widget_mobile.dart';
 
 class HomeScreenMobile extends StatefulWidget {
@@ -76,7 +76,7 @@ class _HomeScreenMobileState extends State<HomeScreenMobile> {
               const SizedBox(height: 45),
               const Divider(color: Colors.black26, thickness: 0.5),
               const SizedBox(height: 25),
-              const SkillsWidgetMobile(),
+              const SkillsWidget(),
               const Divider(color: Colors.black26, thickness: 0.5),
               const SizedBox(height: 25),
               const EducationAndExperienceWidgetMobile(),
@@ -87,11 +87,16 @@ class _HomeScreenMobileState extends State<HomeScreenMobile> {
               const SizedBox(height: 45),
               const Divider(color: Colors.black26, thickness: 0.5),
               const SizedBox(height: 45),
-              Text(
-                  'Made with flutter by @elvissalabarria, design by Alejandro Campos',
-                  style: GoogleFonts.notoSerif(
-                    textStyle: const TextStyle(color: Colors.black45),
-                  )),
+              Flexible(
+                child: Text(
+                  overflow: TextOverflow.ellipsis,
+                  maxLines: 2,
+                  softWrap: true,
+                    'Made with flutter by @elvissalabarria, design by Alejandro Campos',
+                    style: GoogleFonts.notoSerif(
+                      textStyle: const TextStyle(color: Colors.black45),
+                    )),
+              ),
               const SizedBox(height: 25),
             ],
           ),
