@@ -10,7 +10,6 @@ import 'package:google_fonts/google_fonts.dart';
 
 import '../widget/about_me_widget.dart';
 import '../widget/education_and_experience_widget.dart';
-import '../widget/latest_projects_widget.dart';
 import '../widget/personal_summary_widget.dart';
 import '../widget/skills_widget.dart';
 import '../widget/tools_widget.dart';

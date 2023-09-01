@@ -47,7 +47,7 @@ class SkillWidget extends StatelessWidget {
           Text(
             skill.name,
             overflow: TextOverflow.ellipsis,
-                  maxLines: 2,
+                  maxLines: 1,
                   softWrap: true,
             style: GoogleFonts.notoSerif(
               textStyle: const TextStyle(
