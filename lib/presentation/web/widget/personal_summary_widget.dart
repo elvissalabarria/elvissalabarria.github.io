@@ -59,6 +59,8 @@ class PersonalSummaryWidget extends StatelessWidget {
                   height: 5,
                 ),
                 Text(
+                  overflow: TextOverflow.ellipsis,
+                    maxLines: 1,
                   'elvis.salabarria.3@gmail.com',
                   style: GoogleFonts.notoSerif(
                     textStyle: const TextStyle(
@@ -83,6 +85,8 @@ class PersonalSummaryWidget extends StatelessWidget {
                   height: 5,
                 ),
                 Text(
+                  overflow: TextOverflow.ellipsis,
+                  maxLines: 1,
                   'Software Architect',
                   style: GoogleFonts.notoSerif(
                     textStyle: const TextStyle(
@@ -96,6 +100,8 @@ class PersonalSummaryWidget extends StatelessWidget {
                 ),
                 Text(
                   'Mobile Application Developer',
+                  overflow: TextOverflow.ellipsis,
+                  maxLines: 1,
                   style: GoogleFonts.notoSerif(
                     textStyle: const TextStyle(
                       color: Colors.black87,

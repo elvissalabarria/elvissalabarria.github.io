@@ -132,11 +132,7 @@ class _HomeScreenState extends State<HomeScreen> {
         ],
       ),
       body: Padding(
-        padding: EdgeInsets.only(
-          top: 18.0,
-          left: MediaQuery.of(context).size.width * 0.08,
-          right: MediaQuery.of(context).size.width * 0.08,
-        ),
+        padding: const EdgeInsets.all(8.0),
         child: ListView(
           controller: _scrollController,
           children: [
@@ -203,6 +199,7 @@ class _HomeScreenState extends State<HomeScreen> {
           ],
         ),
       ),
+   
     );
   }
 }
