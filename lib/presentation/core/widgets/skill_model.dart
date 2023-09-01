@@ -25,8 +25,8 @@ class SkillWidget extends StatelessWidget {
                     borderRadius: const BorderRadius.all(Radius.circular(50)),
                   ),child: Image.asset(
               skill.image,
-              width: MediaQuery.of(context).size.width *0.1,
-              height: MediaQuery.of(context).size.width *0.1,
+              width: MediaQuery.of(context).size.width *0.04,
+              height: MediaQuery.of(context).size.width *0.04,
             ),
                   ),
             Text(

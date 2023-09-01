@@ -23,7 +23,7 @@ class SkillsWidget extends StatelessWidget {
         ),
         const SizedBox(height: 20),
         SizedBox(
-          height: 200,
+          height: MediaQuery.of(context).size.height * 0.3,
           width: double.infinity,
          child: 
         ListView.builder(
